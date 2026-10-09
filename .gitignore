@@ -1,0 +1,15 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+data/
+*.sqlite*
+*.lock
+*.egg-info/
+build/
+dist/
+
+# Local measurement outputs are not public source code.
+*.jsonl
+LIVE_*.json
+NODESEEK_LIVE_CHECK.json

@@ -1,0 +1,18 @@
+database = "data/scout.sqlite"
+workers = 2
+queue_size = 64
+
+[reddit]
+enabled = false
+poll_seconds = 30
+requests_per_minute = 30
+max_pages = 5
+subreddits = ["ClaudeCode", "claude", "referralcodes", "AskVibecoders", "claudeskills", "ClaudeCowork"]
+older_threads = [] # Reddit submission IDs, without t3_ prefix
+
+[bluesky]
+enabled = true
+
+[nodeseek]
+enabled = true
+poll_seconds = 30

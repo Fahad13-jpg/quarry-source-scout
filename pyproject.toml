@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quarry-source-scout"
+version = "0.2.0"
+description = "Concurrent, durable public-source referral discovery experiment"
+requires-python = ">=3.11"
+dependencies = ["websockets>=14,<16", "tzdata>=2025.1; sys_platform == 'win32'"]
+
+[project.scripts]
+quarry = "quarry.cli:main"
+
+[tool.setuptools.package-data]
+quarry = ["migrations/*.sql"]
+
+[tool.setuptools.packages.find]
+include = ["quarry*"]
